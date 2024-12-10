@@ -1,0 +1,2 @@
+State:- STATE is the most fundamental concept in react,whenever we want to change something in the UI, we change or update the state.
+sandbox Link:- https://codesandbox.io/p/sandbox/happy-butterfly-lmm576
