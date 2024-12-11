@@ -1,2 +1,21 @@
 State:- STATE is the most fundamental concept in react,whenever we want to change something in the UI, we change or update the state.
 sandbox Link:- https://codesandbox.io/p/sandbox/happy-butterfly-lmm576
+
+Why do frontend framework like react is required?
+
+1. Front-end web applications are all about Handling data + displaying data in the user Interface.
+2. UI needs to stay in sync with data.
+3. React like front-end frameworks helps keeping a user Interface in sync with data
+
+// What is React ?
+Javascript library for building user Interfaces.
+// Extermely Popular, Declarative,Component-based state-driven JS library fot building UI.
+// Components are building block of React.
+// We build complex UI by building components and combining these components to build UI.
+// We describe how components look like and how they work using a declarative syntax called JSX.
+// Declarative means react what a component should look like,based on current data/state.
+// React is abstraction away from DOM.
+
+// State-driven -> whenever data/state changes, react reacts to state-change by re-rendering the UI.
+
+// js is a library.
