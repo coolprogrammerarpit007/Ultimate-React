@@ -39,4 +39,22 @@ const sortedArr = arr.slice().sort((a,b) => a - b);
 // console.log(arr);
 
 const sortedBooks = data.slice().sort((a,b) => a.pages - b.pages );
-console.log(sortedBooks);
+// console.log(sortedBooks);
+
+// Working With Mutable Arrays
+// adding a new book to array
+const book =
+    {
+        id:6,
+        title:'Harry Potter and the goblet of fire',
+        'author' : 'JK Rowling'
+    };
+const booksAfterAddedNewBook = [...data,book];
+// console.log(booksAfterAddedNewBook);
+
+// delete a book from array
+const booksAfterDelete = data.filter(book => book.id !== 3);
+// console.log(booksAfterDelete);
+
+const booksAfterUpdate = booksAfterDelete.map(book => book.id === 1 ? {...book,title:'Harry Potter and the prisoner of the azkaban'} : book);
+// console.log(booksAfterUpdate);
