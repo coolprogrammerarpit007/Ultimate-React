@@ -19,3 +19,9 @@ Javascript library for building user Interfaces.
 // State-driven -> whenever data/state changes, react reacts to state-change by re-rendering the UI.
 
 // js is a library.
+
+React applications are entirely made out of components.
+Components are the building blocks of user interfaces in React.
+Components are piece of UI that has it's own data,logic and appereance(how it works and looks)
+we build complex UIs by building multiple components and combining them.
+Components can be re-used , nested inside each other and pass data between them.
