@@ -1,11 +1,10 @@
-import react from 'react';
+import react, {StrictMode} from 'react';
 import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
+import App from "./App";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-    <>
-        <p>Pizza Menu Project</p>
+    <StrictMode>
         <App/>
-    </>
+    </StrictMode>
 )

@@ -25,3 +25,26 @@ Components are the building blocks of user interfaces in React.
 Components are piece of UI that has it's own data,logic and appereance(how it works and looks)
 we build complex UIs by building multiple components and combining them.
 Components can be re-used , nested inside each other and pass data between them.
+
+Rules for writing components.
+1. When writing component, it should be capital
+2. Component must need to be return Markup., it can also return null
+
+JSX
+This is a declarative syntax to describe what components look like and how they work.
+Each component must return a block of JSX.
+JSX is an extention of Javascript that allows us to embed Javascript CSS and Html components into React.
+Each JSX element is converted to a React.createElement function call.
+
+JSX is declarative
+
+Imperative
+
+Manual DOM element Selection amd DOM traversing.
+Step by step DOM Mutations untill we reach the desired UI.
+// Imperative means telling browser what and how to do.
+
+Declarative
+Describe what UI should look like using JSX., based on current data.
+Raact is abstraction from DOM.
+In react, UI is reflection of data called state in future. not need to tell browser how to mutate DOM react handles it very well.
