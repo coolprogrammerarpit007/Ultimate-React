@@ -48,3 +48,6 @@ Declarative
 Describe what UI should look like using JSX., based on current data.
 Raact is abstraction from DOM.
 In react, UI is reflection of data called state in future. not need to tell browser how to mutate DOM react handles it very well.
+
+Props
+// How to pass data between components. and mainly from parent component to the child component.
