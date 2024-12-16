@@ -52,3 +52,18 @@ In react, UI is reflection of data called state in future. not need to tell brow
 Props
 // How to pass data between components. and mainly from parent component to the child component.
 1. we use props to pass data from the parent component to the child component.(down the component tree.)
+2. Essential tool to configure and customize components.
+3. with props, parent components control how child components look and work.
+4. Anything can be passed as props, single values, arrays, objects, functions, even other components.
+
+
+components are made of three parts:- logic,appereance and data.
+data is made of two parts. 1. Props and 2. State.
+Props is data coming from the outside, and can only be updated by the parent component.
+State is internal data  that can be updated by the component itself.
+Props are read-only, they are immuttable! this is one of react's strict rule.
+If you need to mutate props, actually you need states.
+
+Rules of JSX
+1. jsx WORKS essentilly like HTML, but we can enter JS mode by using {} (for text or attributes.)
+2. we can place Js expressions inside {}. 

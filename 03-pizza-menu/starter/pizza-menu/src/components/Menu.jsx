@@ -1,11 +1,15 @@
+import { pizzaData } from '../data';
 import Pizza from './Pizza';
-
 export default function Menu()
 {
     return (
         <main className='menu'>
             <h2>Our Menu</h2>
-            <Pizza name='Pizza Spinaci' ingredients = 'Tomato, mozarella, spinach, and ricotta cheese' img='pizzas/spinaci.jpg'price='12' />
+            <ul className='pizzas'>
+                {pizzaData.map((pizza) => {
+                    return (<Pizza name={pizza.name} ingredients={pizza.ingredients} price={pizza.price} img={pizza.photoName} key={pizza.name} />);
+                })}
+            </ul>
         </main>
     )
 }
