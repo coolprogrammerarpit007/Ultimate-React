@@ -51,3 +51,4 @@ In react, UI is reflection of data called state in future. not need to tell brow
 
 Props
 // How to pass data between components. and mainly from parent component to the child component.
+1. we use props to pass data from the parent component to the child component.(down the component tree.)
