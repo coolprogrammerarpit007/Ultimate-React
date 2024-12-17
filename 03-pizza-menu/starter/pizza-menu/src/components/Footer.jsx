@@ -1,3 +1,4 @@
+import Order from "./Order";
 const isShopOpen = function ()
 {
     const hours = new Date().getHours();
@@ -6,8 +7,5 @@ const isShopOpen = function ()
 
 export default function Footer()
 {
-    return <footer className = 'footer'> { isShopOpen() && <div className="order">
-        <p>We are open Untill 12::00 AM. Come visit us order online.</p>
-        <button className="btn">Order</button>
-    </div> }</footer>
+    return <footer className = 'footer'> { isShopOpen() && <Order time={'12::00 AM'} />}</footer>
 }
