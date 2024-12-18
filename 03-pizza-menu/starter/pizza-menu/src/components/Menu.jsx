@@ -16,7 +16,7 @@ export default function Menu()
                             </p>
                             <ul className='pizzas'>
                                 {pizzaData.map((pizza) => {
-                                    return (<Pizza name={pizza.name} ingredients={pizza.ingredients} price={pizza.price} img={pizza.photoName} key={pizza.name} />);
+                                    return (<Pizza pizzaObj = {pizza} key={pizza.name} />);
                                 })}
                             </ul>
                         </>

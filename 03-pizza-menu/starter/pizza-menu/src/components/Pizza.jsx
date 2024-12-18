@@ -1,12 +1,13 @@
-export default function Pizza( { name,ingredients,img,price })
+export default function Pizza( { pizzaObj })
 {
+    console.log(pizzaObj);
     return (
-        <li className='pizza'>
-            <img src={ img } alt= { name }/>
+        <li className={`pizza ${pizzaObj.soldOut ? 'sold-out' : ''}`}>
+            <img src={ pizzaObj.photoName } alt= { pizzaObj.name }/>
             <div>
-                <h3> { name }</h3>
-                <p> {ingredients} </p>
-                <p> {price} </p>
+                <h3> { pizzaObj.name }</h3>
+                <p> {pizzaObj.ingredients} </p>
+                <p> { pizzaObj.soldOut ? 'SOLD OUT' : <span> {pizzaObj.price}</span>}  </p>
             </div>
         </li>
     );
