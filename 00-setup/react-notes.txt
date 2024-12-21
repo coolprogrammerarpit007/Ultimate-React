@@ -67,3 +67,38 @@ If you need to mutate props, actually you need states.
 Rules of JSX
 1. jsx WORKS essentilly like HTML, but we can enter JS mode by using {} (for text or attributes.)
 2. we can place Js expressions inside {}. 
+
+// Handling Event The React Way:-
+// 1. Use the event handler as a prop in the react component, always use callback function to bind the context of the event handler. 
+
+State in React.
+State is a data that a component can hold over time, necessary for information that it needs to remember throughout the application's lifecycle.
+2. State is components' memory.
+State Variable/piece of state:-  a single variable in a component(component state.)
+3. updating state triggers react to re-render the component.
+
+Summary:-
+1. State allows developers to update the component's view by re-rendering it.
+2. persist local variables b/w renderers.
+
+In order to use states in the component, we do three steps.
+1. create a new state variable.
+2. use it in code,generally in the JSX.
+3. updete the state using some event handler function.
+
+hooks are allowed to use at the top level of the function or component. not inside callback or if conditions.
+
+// Mechanics of state in react.
+1. we don't do direct DOM manipulations in react. because react is declarative.
+Question is:- how a component view is updated then.
+
+In React, a view is updated by re-rendering the component.
+Re-rendering means,react calling the function again.
+State is preserved throughout re-renders. when a state is updated component automatically re-renders.
+
+In summary, as a react developer whenever we want to update view, we update state, as the state updates, react automatically renders the component again means call the function again and show the latest view to the user.
+
+// updating state based on the current value.
+// for updating state based on the current state, pass a callback function in the setCounter function.
+// when we are not updating state based on the current state, we can pass a value directly to the setCounter function.
+Each component has and manages it's own state, no matter how many times we render the same component.
