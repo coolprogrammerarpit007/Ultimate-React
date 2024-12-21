@@ -102,3 +102,12 @@ In summary, as a react developer whenever we want to update view, we update stat
 // for updating state based on the current state, pass a callback function in the setCounter function.
 // when we are not updating state based on the current state, we can pass a value directly to the setCounter function.
 Each component has and manages it's own state, no matter how many times we render the same component.
+with state, we view UI as a reflection of data changing over time.
+we describe that reflection of data using state, event handlers and JSX.
+
+// Practical Guidlines about the state.
+1. use state variable for any data that the component should keep track over time.this is data that will change at some point.
+2. whenever you want something in the component to be dynamic, creata a piece of state related to that thing, and update that state when that "thing" should change. 
+3. if you want to change a way component looks, or the data it displays, update it's state , that usually happens in an event handler function.
+4. when building a component , imagine it's view as a reflection of state changing over time.
+5. for a data that should not trigger component re-renders , don't use atate. use a regular variable instead.
